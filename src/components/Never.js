@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import {Header, Icon, Label} from 'semantic-ui-react';
+import React from 'react';
+import {Header, Label} from 'semantic-ui-react';
 import Foodlist from './Foodlist'
 
 export default class Never extends React.Component {

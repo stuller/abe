@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Router, Route} from 'react-router';
 import './App.css';
 import 'semantic-ui-css/semantic.min.css';
 
@@ -13,13 +12,20 @@ const foodlist = require('./data/dailyFoods.json')
 
 
 class App extends Component {
+    constructor(props) {
+        super(props);
+        this.handleConsumeFood = this.handleConsumeFood.bind(this);
+    }
+    handleConsumeFood() {
+        alert('you ate some food');
+    }
   render() {
 
 
     return (
       <div className="App">
           {/*//TODO create router*/}
-          <Daily foodlist={foodlist.dailyFoods}/>
+          <Daily foodlist={foodlist.dailyFoods} onConsumeFood={this.handleConsumeFood}/>
           <ThreeTimes foodlist={foodlist.threeTimesWeeklyFoods}/>
           <OneTime foodlist={foodlist.onceAWeekFoods}/>
           <Never foodlist={foodlist.neverEatFoods}/>

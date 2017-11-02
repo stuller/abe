@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import {Header, Icon, Label} from 'semantic-ui-react';
+import React from 'react';
+import {Header, Label} from 'semantic-ui-react';
 import Foodlist from './Foodlist'
 
 export default class Daily extends React.Component {
+
     render() {
         return (
             // TODO: remove style here
@@ -12,7 +13,7 @@ export default class Daily extends React.Component {
                     <Header.Content>Daily Foods</Header.Content>
                 </Header>
                 <p>Eat these foods daily</p>
-                <Foodlist foods = {this.props.foodlist}/>
+                <Foodlist foods = {this.props.foodlist} onConsumeFood={this.props.onConsumeFood}/>
             </div>
         )
     }
