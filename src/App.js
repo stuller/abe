@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Grid} from 'semantic-ui-react';
 import './App.css';
 import 'semantic-ui-css/semantic.min.css';
 
@@ -41,12 +42,14 @@ class App extends Component {
 
     return (
       <div className="App">
-          {/*//TODO create router*/}
-          <Daily name="dailyFoods" foodlist={this.state.dailyFoods} onUpdateFood={this.handleUpdateFood}/>
-          <ThreeTimes name="threeTimesWeeklyFoods" foodlist={this.state.threeTimesWeeklyFoods} onUpdateFood={this.handleUpdateFood}/>
-          <OneTime name="onceAWeekFoods" foodlist={this.state.onceAWeekFoods} onUpdateFood={this.handleUpdateFood}/>
-          <Never name="neverEatFoods" foodlist={this.state.neverEatFoods} onUpdateFood={this.handleUpdateFood}/>
-
+          <Grid columns={4} divided>
+              <Grid.Row>
+                  <Grid.Column><Daily name="dailyFoods" foodlist={this.state.dailyFoods} onUpdateFood={this.handleUpdateFood}/></Grid.Column>
+                  <Grid.Column><ThreeTimes name="threeTimesWeeklyFoods" foodlist={this.state.threeTimesWeeklyFoods} onUpdateFood={this.handleUpdateFood}/></Grid.Column>
+                  <Grid.Column><OneTime name="onceAWeekFoods" foodlist={this.state.onceAWeekFoods} onUpdateFood={this.handleUpdateFood}/></Grid.Column>
+                  <Grid.Column><Never name="neverEatFoods" foodlist={this.state.neverEatFoods} onUpdateFood={this.handleUpdateFood}/></Grid.Column>
+              </Grid.Row>
+          </Grid>
       </div>
     );
   }

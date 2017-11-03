@@ -18,8 +18,8 @@ export default class Foodlist extends React.Component {
                         <List.Item key={index}>
                             <List.Content>
                                 <List.Header>{food.name}: {food.consumed}</List.Header>
-                                <Button circular icon="plus" onClick={() => {this.updateFood(index, food.name, "increase")}}/>
                                 <Button circular icon="minus" disabled={food.consumed <= 0} onClick={() => {this.updateFood(index, food.name, "decrease")}}/>
+                                <Button circular icon="plus" onClick={() => {this.updateFood(index, food.name, "increase")}}/>
                             </List.Content>
                         </List.Item>
                     )}
