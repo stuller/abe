@@ -12,7 +12,7 @@ export default class Never extends React.Component {
                     <Header.Content>Banned!</Header.Content>
                 </Header>
                 <p>Never eat these foods</p>
-                <Foodlist foods = {this.props.foodlist}/>
+                <Foodlist name={this.props.name} foodlist = {this.props.foodlist} onUpdateFood={this.props.onUpdateFood}/>
             </div>
         )
     }

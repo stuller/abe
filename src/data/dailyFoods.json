@@ -1,115 +1,144 @@
 {
-  "dailyFoods": [
-    {
-      "name": "Leafy Greens",
-      "min": 1,
-      "max": null
-    },
-    {
-      "name": "Carrots",
-      "min": 1,
-      "max": null
-    },
-    {
-      "name": "Fruit",
-      "min": 1,
-      "max": null
-    },
-    {
-      "name": "Nuts",
-      "min": 1,
-      "max": null
-    },
-    {
-      "name": "Whole Grains",
-      "min": 1,
-      "max": null
-    },
-    {
-      "name": "Green Tea",
-      "min": 1,
-      "max": null
-    }
-  ],
-  "threeTimesWeeklyFoods": [
-    {
-      "name": "Yogurt",
-      "min": 3,
-      "max": 3
-    },
-    {
-      "name": "Cauliflower",
-      "min": 3,
-      "max": 3
-    },
-    {
-      "name": "Broccoli",
-      "min": 3,
-      "max": 3
-    },
-    {
-      "name": "Sweet potato",
-      "min": 3,
-      "max": 3
-    },
-    {
-      "name": "Avocado",
-      "min": 3,
-      "max": 3
-    },
-    {
-      "name": "Oily Fish",
-      "min": 3,
-      "max": 3
-    },
-    {
-      "name": "Tofu",
-      "min": 3,
-      "max": 3
-    }
-  ],
-  "onceAWeekFoods": [
-    {
-      "name": "Red meat",
-      "min": 0,
-      "max": 1
-    },
-    {
-      "name": "White starch",
-      "min": 0,
-      "max": 1
-    },
-    {
-      "name": "Dessert",
-      "min": 0,
-      "max": 1
-    },
-    {
-      "name": "Alcohol",
-      "min": 0,
-      "max": 1
-    }
-  ],
-  "neverEatFoods": [
-    {
-      "name": "Soda",
-      "min": null,
-      "max": 0
-    },
-    {
-      "name": "Processed meals",
-      "min": null,
-      "max": 0
-    },
-    {
-      "name": "Canned soups",
-      "min": null,
-      "max": 0
-    },
-    {
-      "name": "Diet Anything",
-      "min": null,
-      "max": 0
-    }
-  ]
+  "dailyFoods": {
+    "foods": [
+      {
+        "name": "Leafy Greens",
+        "min": 1,
+        "max": null,
+        "consumed": 0
+      },
+      {
+        "name": "Carrots",
+        "min": 1,
+        "max": null,
+        "consumed": 0
+      },
+      {
+        "name": "Fruit",
+        "min": 1,
+        "max": null,
+        "consumed": 0
+      },
+      {
+        "name": "Nuts",
+        "min": 1,
+        "max": null,
+        "consumed": 0
+      },
+      {
+        "name": "Whole Grains",
+        "min": 1,
+        "max": null,
+        "consumed": 0
+      },
+      {
+        "name": "Green Tea",
+        "min": 1,
+        "max": null,
+        "consumed": 0
+      }
+    ]
+  },
+  "threeTimesWeeklyFoods": {
+    "foods": [
+      {
+        "name": "Yogurt",
+        "min": 3,
+        "max": 3,
+        "consumed": 0
+      },
+      {
+        "name": "Cauliflower",
+        "min": 3,
+        "max": 3,
+        "consumed": 0
+      },
+      {
+        "name": "Broccoli",
+        "min": 3,
+        "max": 3,
+        "consumed": 0
+      },
+      {
+        "name": "Sweet potato",
+        "min": 3,
+        "max": 3,
+        "consumed": 0
+      },
+      {
+        "name": "Avocado",
+        "min": 3,
+        "max": 3,
+        "consumed": 0
+      },
+      {
+        "name": "Oily Fish",
+        "min": 3,
+        "max": 3,
+        "consumed": 0
+      },
+      {
+        "name": "Tofu",
+        "min": 3,
+        "max": 3,
+        "consumed": 0
+      }
+    ]
+  },
+  "onceAWeekFoods": {
+    "foods": [
+      {
+        "name": "Red meat",
+        "min": 0,
+        "max": 1,
+        "consumed": 0
+      },
+      {
+        "name": "White starch",
+        "min": 0,
+        "max": 1,
+        "consumed": 0
+      },
+      {
+        "name": "Dessert",
+        "min": 0,
+        "max": 1,
+        "consumed": 0
+      },
+      {
+        "name": "Alcohol",
+        "min": 0,
+        "max": 1,
+        "consumed": 0
+      }
+    ]
+  },
+  "neverEatFoods": {
+    "foods": [
+      {
+        "name": "Soda",
+        "min": null,
+        "max": 0,
+        "consumed": 0
+      },
+      {
+        "name": "Processed meals",
+        "min": null,
+        "max": 0,
+        "consumed": 0
+      },
+      {
+        "name": "Canned soups",
+        "min": null,
+        "max": 0,
+        "consumed": 0
+      },
+      {
+        "name": "Diet Anything",
+        "min": null,
+        "max": 0,
+        "consumed": 0
+      }
+    ]
+  }
 }

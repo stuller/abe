@@ -12,7 +12,7 @@ export default class OneTime extends React.Component {
                     <Header.Content>1x Foods</Header.Content>
                 </Header>
                 <p>Eat these foods 1x a week</p>
-                <Foodlist foods = {this.props.foodlist}/>
+                <Foodlist name={this.props.name} foodlist = {this.props.foodlist} onUpdateFood={this.props.onUpdateFood}/>
             </div>
         )
     }

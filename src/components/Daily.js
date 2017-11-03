@@ -13,7 +13,7 @@ export default class Daily extends React.Component {
                     <Header.Content>Daily Foods</Header.Content>
                 </Header>
                 <p>Eat these foods daily</p>
-                <Foodlist foods = {this.props.foodlist} onConsumeFood={this.props.onConsumeFood}/>
+                <Foodlist name={this.props.name} foodlist = {this.props.foodlist} onUpdateFood={this.props.onUpdateFood}/>
             </div>
         )
     }

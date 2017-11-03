@@ -5,20 +5,21 @@ import {Button, List} from 'semantic-ui-react'
 export default class Foodlist extends React.Component {
     constructor(props) {
         super(props);
-        this.consumeFood = this.consumeFood.bind(this);
+        this.updateFood = this.updateFood.bind(this);
     }
-    consumeFood() {
-        this.props.onConsumeFood();
+    updateFood(index, food, action) {
+        this.props.onUpdateFood(this.props.name, index, food, action);
     }
     render() {
         return (
             <div>
                 <List divided relaxed>
-                    {this.props.foods.map((food, index) =>
+                    {this.props.foodlist.foods.map((food, index) =>
                         <List.Item key={index}>
                             <List.Content>
                                 <List.Header>{food.name}: {food.consumed}</List.Header>
-                                <Button circular icon="plus" onClick={this.consumeFood}/>
+                                <Button circular icon="plus" onClick={() => {this.updateFood(index, food.name, "increase")}}/>
+                                <Button circular icon="minus" disabled={food.consumed <= 0} onClick={() => {this.updateFood(index, food.name, "decrease")}}/>
                             </List.Content>
                         </List.Item>
                     )}

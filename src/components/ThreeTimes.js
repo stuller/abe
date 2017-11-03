@@ -12,7 +12,7 @@ export default class ThreeTimes extends React.Component {
                     <Header.Content>3x Foods</Header.Content>
                 </Header>
                 <p>Eat these foods 3x a week</p>
-                <Foodlist foods = {this.props.foodlist}/>
+                <Foodlist name={this.props.name} foodlist = {this.props.foodlist} onUpdateFood={this.props.onUpdateFood}/>
             </div>
         )
     }
