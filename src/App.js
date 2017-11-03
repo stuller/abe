@@ -31,7 +31,13 @@ class App extends Component {
         } else if (action === "decrease" && foodData.foods[index].consumed > 0) {
             foodData.foods[index].consumed--;
         }
-
+        let progress = 0;
+        for (let i=0; i < foodData.foods.length; i++) {
+            if(foodData.foods[i].consumed >= foodData.foods[i].min) {
+                progress++;
+            }
+        }
+        foodData.progress = progress/foodData.foods.length;
         this.setState({
             [foodlist]: foodData
         })

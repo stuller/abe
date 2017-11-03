@@ -37,7 +37,10 @@
         "max": null,
         "consumed": 0
       }
-    ]
+    ],
+    "progress": 0,
+    "min": 7,
+    "max": null
   },
   "threeTimesWeeklyFoods": {
     "foods": [
@@ -83,7 +86,8 @@
         "max": 3,
         "consumed": 0
       }
-    ]
+    ],
+    "progress": 0
   },
   "onceAWeekFoods": {
     "foods": [
@@ -111,7 +115,8 @@
         "max": 1,
         "consumed": 0
       }
-    ]
+    ],
+    "progress": 0
   },
   "neverEatFoods": {
     "foods": [
@@ -139,6 +144,7 @@
         "max": 0,
         "consumed": 0
       }
-    ]
+    ],
+    "progress": 0
   }
 }
