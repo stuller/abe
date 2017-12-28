@@ -31,13 +31,19 @@ class App extends Component {
         } else if (action === "decrease" && foodData.foods[index].consumed > 0) {
             foodData.foods[index].consumed--;
         }
+        //TODO painful.  simplify.
         let progress = 0;
         for (let i=0; i < foodData.foods.length; i++) {
-            if(foodData.foods[i].consumed >= foodData.foods[i].min) {
-                progress++;
+            var foodProgress = foodData.foods[i].consumed/foodData.foods[i].min;
+            if (foodProgress > 1) {
+                foodProgress = 1;
             }
+            progress = progress + foodProgress;
         }
-        foodData.progress = progress/foodData.foods.length;
+        foodData.progress = progress/foodData.foods.length * 100;
+        if (foodData.progress > 100) {
+            foodData.progress = 100;
+        }
         this.setState({
             [foodlist]: foodData
         })

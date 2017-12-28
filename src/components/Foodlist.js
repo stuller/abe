@@ -12,7 +12,7 @@ export default class Foodlist extends React.Component {
     }
     render() {
         return (
-            <div>{this.props.foodlist.progress}
+            <div>
                 <List divided relaxed>
                     {this.props.foodlist.foods.map((food, index) =>
                         <List.Item key={index}>
